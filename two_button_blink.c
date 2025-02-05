@@ -9,11 +9,8 @@
 //-----------------------------------
 // Adjust this if you're on Pi 4 => 0xFE200000
 //-----------------------------------
-#ifndef GPIO_BASE
 #define GPIO_BASE 0x3F200000
-#endif
-
-#define GPIO_LEN     0xB4
+#define GPIO_LEN  0xB4
 
 // Register offsets
 #define GPFSEL0_OFFSET 0x00
@@ -223,5 +220,5 @@ module_init(two_button_init);
 module_exit(two_button_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("YourName");
+MODULE_AUTHOR("Andrei Galitianu");
 MODULE_DESCRIPTION("Two-button LED frequency driver (polling) on Raspberry Pi");
